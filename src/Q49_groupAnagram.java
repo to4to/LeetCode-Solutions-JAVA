@@ -38,11 +38,13 @@ public class Q49_groupAnagram{
 
 
         }
-        List<List<String>> resultList = new ArrayList<>();
+       /* List<List<String>> resultList = new ArrayList<>();
         for (Map.Entry<String, List<String>> stringAnagrams : stringAnagramsMap.entrySet()) {
             resultList.add(stringAnagrams.getValue());
-        }
-        return resultList;
+        }*/
+        // return resultList;
+
+        return new ArrayList<>(stringAnagramsMap.values());
     }
 
 }
